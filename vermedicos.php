@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result->num_rows > 0) {
         $medicos = array();
 
-        // Obtener el primer registro
+
         $row = $result->fetch_assoc();
         $medico = array(
             'id_medico' => $row['id_medico'],
